@@ -1,0 +1,27 @@
+/* Inicializo reseteando los valores predeterminados*/
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+$cardColor:BURLYWOOD;
+$primaryColor: orange;
+$secondaryColor: white;
+
+
+
+.titles {
+    text-align: center;
+    margin: 3%;
+    &::first-letter{
+        color: $primaryColor;
+        font-weight: bold;
+    }
+}
+
+/* le doy formato a los enlaces de mi website*/
+.enlace {
+    text-decoration: none;
+    color: black;
+}

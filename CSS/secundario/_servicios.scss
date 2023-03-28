@@ -1,0 +1,39 @@
+/*creo grid para la page servicios tamaño desktop*/
+.servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 4%;
+
+    /*Creo estilo de los servicios__card*/
+    &__card{
+        background-color: $cardColor;
+        width: 90%;
+        border-radius: 5%;
+        padding: 2%;
+        margin: 3%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+            /*le doy formatos a imagenes de las card de los servicios*/
+            &__image {
+                width: 100%;
+                border-radius: 3%;
+                text-align: center;
+            }
+            /* le doy formato al button de las cards servicios*/
+            &__button {
+                background-color: $secondaryColor;
+                border-radius: 10px;
+                font-size: 100%;
+                font-weight: bold;
+                padding: 0.5%;
+            }
+    /* doy animación a cards de servicios*/
+    &:hover{
+        transform: scale(1.07);
+        transition: 0.5s;
+    }
+    }
+
+}

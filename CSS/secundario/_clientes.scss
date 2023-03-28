@@ -1,0 +1,43 @@
+/*Creo grid de la page clientes*/
+.clientes{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 4%;
+    align-items: center;
+
+    &__card{
+        background-color: $cardColor;
+        width: 90%;
+        border-radius: 5%;
+        padding: 2%;
+        margin: 5%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        animation-name: inicio__card__clientes;
+        animation-duration: 1s;
+    /*Creo formato de las imagenes de las card de servicios*/
+        &__image{
+            width: 100%;
+            border-radius: 3%;
+            text-align: center;
+        }
+    }
+
+    @for $item from 1 through 3{
+        &__card:nth-child(#{$item}){
+            animation-delay: $item*0.05s;
+        }
+    }
+}
+
+
+@keyframes inicio__card__clientes{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

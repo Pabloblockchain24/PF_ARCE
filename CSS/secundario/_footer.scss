@@ -1,0 +1,18 @@
+/*le doy formato al footer*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2%;
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    font-weight: bold;
+    /* le doy formato a la ul que aparece en el footer*/
+    &__items {
+       list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 25px;
+    }
+}

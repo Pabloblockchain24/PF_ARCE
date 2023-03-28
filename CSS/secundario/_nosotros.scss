@@ -1,0 +1,20 @@
+/* le doy formato a la page nosotros, le digo a los hijos que se formen en 3 filas de 2 columnas (para desktop) y que se alineen al centro*/
+.nosotros{
+    background-color: $cardColor;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    padding-inline: 5%;
+    margin-bottom: 5%;
+
+    &__image{     /* le doy formato a las imagenes de la seccion nosotros*/
+    border-radius: 3%;
+    text-align: center;
+    width: 80%;
+    margin: 3%;
+    }
+}
+
+

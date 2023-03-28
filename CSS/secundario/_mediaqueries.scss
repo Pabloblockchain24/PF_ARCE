@@ -1,0 +1,35 @@
+/* Aplico mediaquerys a tamaño de pantalla 992px (tamaño desktop); cambio distribución del grid*/
+
+@media screen and (max-width: 992px) {
+    .nosotros{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,1fr);
+    }
+    .servicios{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .clientes{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .formatoCarousel .carousel {
+        width: 60%
+    }
+
+
+}
+/* Aplico mediaquerys a tamaño de pantalla 576px (tamaño moviles); cambio distribución del grid*/
+@media screen and (max-width: 576px) {
+    .servicios{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        margin-inline: 15%;
+    }
+    .clientes{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .formatoCarousel .carousel {
+        width: 90%
+    }
+
+}

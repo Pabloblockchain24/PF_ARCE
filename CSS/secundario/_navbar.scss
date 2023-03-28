@@ -1,0 +1,26 @@
+/* le doy formato al navbar, centrando, dejandolo en negrita y en color negro*/
+.formatoNavbar {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+    /* Creo clase para darle transition al navbar*/
+.navbar__animacion{
+    /*animation-name: inicio_navbar;
+    animation-duration: 0.5s;*/
+    transition: 0.5s;
+
+/* Creo clase para darle animacion al navbar con la pseudoclase hover*/
+    &:hover{
+        background-color: $primaryColor;
+        color: $secondaryColor;
+        margin: 5px;
+        border-radius: 3px;
+        transform:scale(1.2) translate(0,-5px);
+    }
+
+}
+
+.nav-item{
+    text-align: center;
+}

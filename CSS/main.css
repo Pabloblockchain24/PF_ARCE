@@ -1,0 +1,330 @@
+@charset "UTF-8";
+/* Inicializo reseteando los valores predeterminados*/
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.titles {
+  text-align: center;
+  margin: 3%;
+}
+.titles::first-letter {
+  color: orange;
+  font-weight: bold;
+}
+
+/* le doy formato a los enlaces de mi website*/
+.enlace {
+  text-decoration: none;
+  color: black;
+}
+
+/* le doy formato al navbar, centrando, dejandolo en negrita y en color negro*/
+.formatoNavbar {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Creo clase para darle transition al navbar*/
+.navbar__animacion {
+  /*animation-name: inicio_navbar;
+  animation-duration: 0.5s;*/
+  transition: 0.5s;
+  /* Creo clase para darle animacion al navbar con la pseudoclase hover*/
+}
+.navbar__animacion:hover {
+  background-color: orange;
+  color: white;
+  margin: 5px;
+  border-radius: 3px;
+  transform: scale(1.2) translate(0, -5px);
+}
+
+.nav-item {
+  text-align: center;
+}
+
+/*le doy formato al footer*/
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2%;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  /* le doy formato a la ul que aparece en el footer*/
+}
+.footer__items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+/*Incluyo foto de portada al Index y doy display flex para que el titulo pueda quedar centrado*/
+.portada {
+  background-image: url("../IMAGES/portadaIndex.jpg");
+  background-size: cover;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Creo keyframes de la animacion de la portada con nombre portadaAnimacion*/
+}
+.portadaAnimacion {
+  /* Creo animación de la portada que esta enlazada al keyframes animacionPortada*/
+  font-size: 150%;
+  color: white;
+  border-radius: 2%;
+  padding: 0.8%;
+  background-color: orange;
+  position: relative;
+  top: 35%;
+  animation-name: animacionPortada;
+  animation-duration: 2s;
+}
+@keyframes animacionPortada {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*le doy formato a la seccion de servicios que aparece en el index*/
+.index__servicios {
+  padding-inline: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* le doy formato a las card que aparecen en la seccion servicios del index*/
+}
+.index__servicios__card {
+  background-color: BURLYWOOD;
+  padding: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* le doy el ancho maximo a cubrir por las cards en la pagina servicios del index*/
+}
+.index__servicios__card__image {
+  width: 100%;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.formatoCarousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formatoCarousel .carousel {
+  width: 40%;
+  height: 40%;
+}
+.formatoCarousel .d-img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.8);
+  border-radius: 1%;
+}
+.formatoCarousel .d-h4 {
+  background-color: black;
+  filter: opacity(0.7);
+  border-radius: 3%;
+  font-weight: bolder;
+}
+
+/* le doy formato al button que aparece en la seccion servicios del index*/
+.index__ButtonServicios {
+  width: 30%;
+  background-color: orange;
+  border-radius: 10px;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 1%;
+  margin-block: 3%;
+  text-align: center;
+}
+
+/* le doy formato al mapa del index para que quede centrado*/
+.index__Mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+  padding-bottom: 5%;
+  background-color: rgb(231, 229, 229);
+}
+
+/* le doy formato a la page nosotros, le digo a los hijos que se formen en 3 filas de 2 columnas (para desktop) y que se alineen al centro*/
+.nosotros {
+  background-color: BURLYWOOD;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  padding-inline: 5%;
+  margin-bottom: 5%;
+}
+.nosotros__image { /* le doy formato a las imagenes de la seccion nosotros*/
+  border-radius: 3%;
+  text-align: center;
+  width: 80%;
+  margin: 3%;
+}
+
+/*creo grid para la page servicios tamaño desktop*/
+.servicios {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin-bottom: 4%;
+  /*Creo estilo de los servicios__card*/
+}
+.servicios__card {
+  background-color: BURLYWOOD;
+  width: 90%;
+  border-radius: 5%;
+  padding: 2%;
+  margin: 3%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /*le doy formatos a imagenes de las card de los servicios*/
+  /* le doy formato al button de las cards servicios*/
+  /* doy animación a cards de servicios*/
+}
+.servicios__card__image {
+  width: 100%;
+  border-radius: 3%;
+  text-align: center;
+}
+.servicios__card__button {
+  background-color: white;
+  border-radius: 10px;
+  font-size: 100%;
+  font-weight: bold;
+  padding: 0.5%;
+}
+.servicios__card:hover {
+  transform: scale(1.07);
+  transition: 0.5s;
+}
+
+/*Creo grid de la page clientes*/
+.clientes {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 4%;
+  align-items: center;
+}
+.clientes__card {
+  background-color: BURLYWOOD;
+  width: 90%;
+  border-radius: 5%;
+  padding: 2%;
+  margin: 5%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  animation-name: inicio__card__clientes;
+  animation-duration: 1s;
+  /*Creo formato de las imagenes de las card de servicios*/
+}
+.clientes__card__image {
+  width: 100%;
+  border-radius: 3%;
+  text-align: center;
+}
+.clientes__card:nth-child(1) {
+  animation-delay: 0.05s;
+}
+.clientes__card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.clientes__card:nth-child(3) {
+  animation-delay: 0.15s;
+}
+
+@keyframes inicio__card__clientes {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/*le doy fondo a la page formulario y le digo a los hijos que se alineen al centro en 1 columna*/
+.contacto {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contacto__item {
+  padding: 0.5%;
+  width: 60%;
+  margin: 0.5%;
+}
+
+.btn {
+  margin: 3%;
+}
+
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: orange;
+}
+
+.contact-column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Aplico mediaquerys a tamaño de pantalla 992px (tamaño desktop); cambio distribución del grid*/
+@media screen and (max-width: 992px) {
+  .nosotros {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+  }
+  .servicios {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .clientes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .formatoCarousel .carousel {
+    width: 60%;
+  }
+}
+/* Aplico mediaquerys a tamaño de pantalla 576px (tamaño moviles); cambio distribución del grid*/
+@media screen and (max-width: 576px) {
+  .servicios {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    margin-inline: 15%;
+  }
+  .clientes {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .formatoCarousel .carousel {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
