@@ -34,30 +34,6 @@
 }
 }
 
-
-/*le doy formato a la seccion de servicios que aparece en el index*/
-.index__servicios{
-    padding-inline: 5%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* le doy formato a las card que aparecen en la seccion servicios del index*/
-    &__card{
-        background-color: $cardColor;
-        padding: 5%;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        /* le doy el ancho maximo a cubrir por las cards en la pagina servicios del index*/
-        &__image{
-            width: 100%;
-            border-radius: 3%;
-            text-align: center;
-        }
-    }
-
-}
-
 .formatoCarousel{
 display: flex;
 flex-direction: column;
@@ -82,17 +58,6 @@ align-items: center;
 
 }
 
-/* le doy formato al button que aparece en la seccion servicios del index*/
-.index__ButtonServicios {
-    width: 30%;
-    background-color: $primaryColor;
-    border-radius: 10px;
-    font-size: 100%;
-    font-weight: bold;
-    padding: 1%;
-    margin-block: 3%;
-    text-align: center;
-}
 /* le doy formato al mapa del index para que quede centrado*/
 .index__Mapa {
     display: flex;
