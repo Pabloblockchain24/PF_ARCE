@@ -1,5 +1,5 @@
 /*Incluyo foto de portada al Index y doy display flex para que el titulo pueda quedar centrado*/
-.portada {
+.index__Portada {
     background-image: url("../IMAGES/portadaIndex.jpg");
     background-size: cover;
     height: 65vh;
@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
 
-    &Animacion{
+    &__Animacion{
     /* Creo animación de la portada que esta enlazada al keyframes animacionPortada*/
         font-size: 150%;
         color: $secondaryColor;
@@ -54,8 +54,6 @@ align-items: center;
         border-radius:3%;
         font-weight: bolder;
     }
-
-
 }
 
 /* le doy formato al mapa del index para que quede centrado*/
@@ -63,7 +61,6 @@ align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
     padding-bottom: 5%;
     background-color: rgb(231, 229, 229);
 }

@@ -51,6 +51,7 @@
         </nav>
     </header>
     <main>
+        <form>
         <!-- Creo titulo para la seccion contacto-->
         <h1 class="titles"> ENVIANOS TU SOLICITUD DE COTIZACIóN</h1>
 
@@ -88,7 +89,6 @@
                         </div>
                     </form>
 
-
                 </div>
             </div>
 
@@ -96,25 +96,27 @@
                 <div class="layout__column__titles">
                     <h3>CUENTANOS QUE BUSCAS</h3>
                 </div>
-                <div>
-                    <div class="layout__column__item">
-                        <label for="exampleFormControlTextarea1" class="form-label">INGRESA SERVICIO REQUERIDO </label>
-                        <select class="form-select " aria-label="Default select example">
-                            <option selected>Ingrese servicio a cotizar</option>
-                            <option value="retiroPuerto">Retiro de Puerto</option>
-                            <option value="almacenamiento">Almancenamiento</option>
-                            <option value="desconsolidado">Desconsolidado</option>
-                            <option value="entregaCliente">Entrega en cliente</option>
-                            <option value="devolucionVacio">Devolución de vacio</option>
-                            <option value="respaldoOperacion">Respaldo operación</option>
-                        </select>
+                    <div>
+                        <div class="layout__column__item">
+                            <label for="exampleFormControlTextarea1" class="form-label">INGRESA SERVICIO REQUERIDO
+                            </label>
+                            <select class="form-select " aria-label="Default select example">
+                                <option selected>Ingrese servicio a cotizar</option>
+                                <option value="retiroPuerto">Retiro de Puerto</option>
+                                <option value="almacenamiento">Almancenamiento</option>
+                                <option value="desconsolidado">Desconsolidado</option>
+                                <option value="entregaCliente">Entrega en cliente</option>
+                                <option value="devolucionVacio">Devolución de vacio</option>
+                                <option value="respaldoOperacion">Respaldo operación</option>
+                            </select>
+                        </div>
+                        <div class="layout__column__item">
+                            <label for="exampleFormControlTextarea1" class="form-label">CUENTANOS DEL SERVICIO QUE
+                                REQUIERES
+                            </label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"> </textarea>
+                        </div>
                     </div>
-                    <div class="layout__column__item">
-                        <label for="exampleFormControlTextarea1" class="form-label">CUENTANOS DEL SERVICIO QUE REQUIERES
-                        </label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="9"> </textarea>
-                    </div>
-                </div>
             </div>
         </div>
 
@@ -128,10 +130,11 @@
                 </div>
             </div>
             <div class="botones m-3">
-                <button class="btn btn-primary" type="submit">ENVIAR</button>
-                <button class="btn btn-secondary" type="reset">LIMPIAR</button>
+                <input class="btn btn-primary" type="submit" value="Enviar">
+                <input class="btn btn-secondary" type="reset" value="Limpiar">
             </div>
         </div>
+    </form>
     </main>
     <!--A continuación agrego el footer que estara presente en todas las paginas-->
     <footer class="footer">

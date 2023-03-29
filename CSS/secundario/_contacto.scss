@@ -1,36 +1,30 @@
 .layout{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-image: url("../IMAGES/wallpaperCONTACTO.jpg");
+    background-image: url("../IMAGES/portadaContacto.jpg");
     background-size: cover;
-}
+    &__column{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-.layout__column{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.layout__column__form{
-    width: 100%;
-}
-.layout__column div{
-    margin: 2%;
-}
-
-.layout__column__titles{
-    background-color: white;
-    text-align: center;
-    width: 65%;
-    padding: 1%;
-    margin-top: 2%;
-    justify-content: center;
-}
-
-.layout__column__item{
-    margin: 2%;
-    font-weight: bolder;
+        &__titles{
+            background-color: white;
+            text-align: center;
+            width: 65%;
+            padding: 1%;
+            margin-top: 2%;
+            justify-content: center;
+        }
+        &__item{
+            margin: 2%;
+            font-weight: bolder;
+        }
+        div{
+            margin: 3%;
+        }
+    }
 }
 
 .check-box{
@@ -43,6 +37,4 @@
     display: flex;
     flex-direction: row;
 }
-.btn{
-    margin: 5%;
-}
+
