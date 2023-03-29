@@ -15,7 +15,13 @@
     .formatoCarousel .carousel {
         width: 60%
     }
+    .layout{
+        grid-template-columns: 1fr;
+        &__column{
+            margin-bottom: 10%;
+        }
 
+    }
 
 }
 /* Aplico mediaquerys a tamaño de pantalla 576px (tamaño moviles); cambio distribución del grid*/
@@ -31,5 +37,8 @@
     .formatoCarousel .carousel {
         width: 90%
     }
+
+
+
 
 }
